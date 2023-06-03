@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-section {
+    display: flex;
+}
+
+.sidebar-container {
+    width: 20%;
+}
+
+.books-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+.card {
+    box-shadow: -1px 1px 9px 3px #888888;
+    margin: 1%;
+    width: 23%;
+    border-radius: 5px;
+    height: min-content;
+}
+
+.img-con {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.book-img {
+    max-width: 100%;
+    height: 200px;
+}
+
+ul.book-ratings {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.book-details-con {
+    padding: 5% 5%;
+}
+
+.coins {
+    background-color: orange;
+    width: 35%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 4px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coins svg {
+    font-size: 24px;
+}
+
+h4.book-title {
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(47, 46, 65);
+    font-weight: 500;
+    margin: 0px;
+    white-space: pre;
+}
+
+.author,
+.condition {
+    text-overflow: ellipsis;
+    white-space: inherit;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(147, 147, 147);
+    margin: 5px 0px 0px;
+    font-weight: 500;
+}
+
+.coin-condition-con {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p.condition {
+    text-align: end;
+    font-size: 14px;
+}
+
+/*============ Boook condition CSS ================*/
+.Good {
+    color: rgb(5, 156, 5);
+}
+
+.Average {
+    color: blue;
+}
+
+.Bad {
+    color: red;
+}
+
+button.coin-btn {
+    background: orange;
+    color: white;
+    padding: 3%;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 427px) and (max-width: 768px) {
+
+    .card {
+        width: 30%;
+    }
+
+    p.condition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 426px) {
+    .card {
+        width: 45%;
+    }
+
+    .sidebar-container {
+        display: none;
+    }
+
+    .books-container {
+        width: 100%;
+    }
+
+    p.condition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
