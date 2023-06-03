@@ -6,7 +6,7 @@ Welcome to our online bookstore where you can buy and sell your favorite novels 
 
 
 <b>Step 1: Log In</b><br />
-To start using our platform, login with your Google account. Once you've logged in, you can start exploring our collection of novels and sell your old ones.
+To start using our platform, login with your account. Once you've logged in, you can start exploring our collection of novels and sell your old ones.
 
 
 <b>Step 2: Sell Your Novels</b><br />
