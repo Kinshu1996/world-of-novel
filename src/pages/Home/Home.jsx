@@ -10,7 +10,7 @@ import { useContext } from "react";
 
   return (
     <section className="home-section ">
-      <SideBar />
+      {/* <SideBar /> */}
       <div className="books-container max-h-screen overflow-y-scroll hide-scrollbar">
         {message && <h1 className="text-4xl text-gray-500 mt-20">{message}</h1>}
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import coin from "./pic/coins.png";
-import usericon from "./pic/usericon.svg";
 import cart from "./pic/cart.svg";
 import { useNavigate } from "react-router";
 import { Context } from "../../Context/AuthContext";
@@ -9,12 +8,11 @@ import { Link } from "react-router-dom";
 import logo from "./pic/wonlogo-1.png";
 
 function NavBar() {
-  // const { logOut, user, coins, setNovelData, setState, addCartItem,setMessage } =
-  //   UserAuth();
+  
     const { coins, setNovelData, addCartItem,setMessage } = useContext(Context);
   const [q, setQ] = useState("");
   const navigate = useNavigate();
-  const [url, setUrl] = useState(usericon);
+
   const [mainpage, setMainPage] = useState(false);
 
   const uploadBooks = () => {
@@ -27,17 +25,6 @@ function NavBar() {
     }
   }, [window.location.pathname]);
 
-  // useEffect(() => {
-  //   if (user) {
-  //     setUrl(user.photoURL);
-  //   } else {
-  //     navigate("/");
-  //     setState({
-  //       email: "",
-  //       password: "",
-  //     });
-  //   }
-  // }, [user]);
 
   useEffect(() => {
     searchData();
@@ -54,9 +41,6 @@ function NavBar() {
     }
     setNovelData(searchResult);
   };
-  // const handleLogin = async () => {
-  //   await logOut();
-  // };
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
     navigate('/');
@@ -145,11 +129,6 @@ function NavBar() {
             {addCartItem.length}
           </p>
         )}
-        {/* <img
-          className="w-7 h-7 ml-4 mr-4 cursor-pointer text-white  object-cover rounded-full"
-          src={url}
-          alt=""
-        ></img> */}
         <button onClick={handleLogout} className="text-black underline">
           Logout
         </button>
