@@ -20,7 +20,7 @@ function Instructions() {
 const showStepOne = () => {
   Swal.fire({
     title: "Step 1: Login",
-    text: `To start using our platform, login with your Google account. 
+    text: `To start using our platform, login with your account. 
     Once you've logged in, you can start exploring our collection of novels and sell your old ones.`,
     confirmButtonText: "Next",
     confirmButtonColor: "#ffa500",
